@@ -19,8 +19,8 @@ def monte_carlo(n):
     p = [0,0]
     c = 0
     for i in range(n):
-        x = random.random(0.0,1.0)
-        y = random.random(0.0,1.0)
+        x = random.random(0,1)
+        y = random.random(0,1)
         q = [x,y]
         d = math.dist(p,q)
         if (d<1):
