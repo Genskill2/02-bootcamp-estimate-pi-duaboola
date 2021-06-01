@@ -6,8 +6,8 @@ def wallis(n):
     for i in range (1,n+1):
         r = float(4*(n**2))/((4*(n**2))-1)
         pi = pi+r
-    m = float(2*pi)
-    return m
+    
+    return pi/2
 
 class TestWallis(unittest.TestCase):
     def test_low_iters(self):
