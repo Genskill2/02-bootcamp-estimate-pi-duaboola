@@ -24,7 +24,7 @@ def monte_carlo(n):
         q = [x,y]
         d = math.dist(p,q)
         if (d<1):
-            c++
+            c +=1
     pi = 4*(c/n)
     return pi
 
