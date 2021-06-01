@@ -1,5 +1,6 @@
 import math
 import unittest
+import random
 
 def wallis(n):
     pi = 0.0   
@@ -12,6 +13,19 @@ def wallis(n):
         else:
             pi *= z
     pi *= 2
+    return pi
+
+def monte_carlo(n):
+    p = [0,0]
+    c = 0
+    for i in n:
+        x = random.random(0,1)
+        y = random.random(0,1)
+        q = [x,y]
+        d = math.dist(p,q)
+        if (d<1):
+            c++
+    pi = 4*(c/n)
     return pi
 
 class TestWallis(unittest.TestCase):
