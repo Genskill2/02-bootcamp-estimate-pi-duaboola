@@ -2,11 +2,11 @@ import math
 import unittest
 
 def wallis(n):
-    for i in range (1,n):
-        float r
-        r = (4*(n**2))/((4*(n**2))-1)
-    float m
-    m = 2*r
+    pi=0.0
+    for i in range (1,n+1):
+        r = float(4*(n**2))/((4*(n**2))-1)
+        pi = pi+r
+    m = float(2*r)
     return m
 
 class TestWallis(unittest.TestCase):
