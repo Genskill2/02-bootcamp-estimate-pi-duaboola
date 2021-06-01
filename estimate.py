@@ -18,7 +18,7 @@ def wallis(n):
 def monte_carlo(n):
     p = [0,0]
     c = 0
-    for i in n:
+    for i in (n):
         x = random.random(0.0,1.0)
         y = random.random(0.0,1.0)
         q = [x,y]
